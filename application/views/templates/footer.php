@@ -1,4 +1,4 @@
-<? /* 
+<?php /* 
 	// Analytics - uncomment and put in our #
 	<script>
 	    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

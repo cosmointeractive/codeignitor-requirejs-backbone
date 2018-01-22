@@ -4,8 +4,8 @@
 		Display my content passed from the controller
 	</p>
 
-	<? if ( isset($foo) ) : ?>
-		<div class="data">Our data: <b>foo === <?= $foo; ?></b></div>
-	<? endif; ?>
+	<?php if ( isset($foo) ) : ?>
+		<div class="data">Our data: <b>foo === <?php echo $foo; ?></b></div>
+	<?php endif; ?>
 
 </div>

@@ -6,24 +6,24 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title><?= (isset($page_title)) ? $page_title : 'Your Default Page Title'; ?></title>
-	<meta name="description" content="<?= (isset($meta_description)) ? $meta_description : 'Your Default Meta Desciption' ; ?>" />
+	<title><?php echo (isset($page_title)) ? $page_title : 'Your Default Page Title'; ?></title>
+	<meta name="description" content="<?php echo (isset($meta_description)) ? $meta_description : 'Your Default Meta Desciption' ; ?>" />
 	<meta name="viewport" content="width=device-width">
 
-	<? if (!empty($site_css)) : ?>
-		<? foreach ($site_css as $css) : ?>
-			<link rel="stylesheet" type="text/css" href="<?=base_url() . $css;?>" />
-		<? endforeach; ?>
-	<? endif; ?>
+	<?php if (!empty($site_css)) : ?>
+		<?php foreach ($site_css as $css) : ?>
+			<link rel="stylesheet" type="text/css" href="<?php echo base_url() . $css;?>" />
+		<?php endforeach; ?>
+	<?php endif; ?>
 
-	<? if (!empty($site_js)) : ?>
-		<? foreach ($site_js as $js) : ?>
-		    <script type="text/javascript" src="<?=base_url() . $js;?>"></script>
-		<? endforeach; ?>
-	<? endif; ?>
+	<?php if (!empty($site_js)) : ?>
+		<?php foreach ($site_js as $js) : ?>
+		    <script type="text/javascript" src="<?php echo base_url() . $js;?>"></script>
+		<?php endforeach; ?>
+	<?php endif; ?>
 
-    <? // RequireJS to handle js dependencies and client-side scripting ?>
-    <script data-main="/js/main" src="<?=base_url();?>js/libs/require.js"></script>
+    <?php // RequireJS to handle js dependencies and client-side scripting ?>
+    <script data-main="/js/main" src="<?php echo base_url();?>js/libs/require.js"></script>
     <link rel="icon" href="favicon.ico">
 </head>
 
