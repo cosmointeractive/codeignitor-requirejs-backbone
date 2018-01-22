@@ -8,7 +8,7 @@
  *
  */
 
-define('module/Example',
+define('app/modules/Example',
 	[
 		'jquery',
 		'underscore',
